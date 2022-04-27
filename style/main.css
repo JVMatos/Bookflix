@@ -1,0 +1,90 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+
+body{
+    background-color: var(--preto);
+    font-family: 'Martel Sans', sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-family: 'Kanit', sans-serif;
+    color: var(--vermelho);
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Livro Principal*/
+
+.livro-principal{
+    display: grid;
+    grid-template-areas: 
+    "descricao descricao" "capa capa";
+    background-image: linear-gradient(rgba(0,0,0,.90), rgba(0,0,0,.90)), url('/resources/img/the-davinci-code2.jpg');
+    height: 400px;
+    background-size: cover;
+    box-sizing: border-box;
+    
+}
+
+.livro-principal .container{
+    height: 400px;
+}
+
+.livro-principal .container .informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.livro-principal .container .informacoes .titulo{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+}
+
+.livro-principal .container .informacoes .descricao{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Martel', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#capa{
+    margin: 0;
+    padding: 0;
+}
+.livro-principal .capa-principal{
+    height: 400px;
+    justify-content: center;
+    margin: 10px 10px 10px;
+}
